@@ -5,7 +5,7 @@ function Home() {
     return (
         <TypingText
             phrases={[
-                "Engineer, Developer.",
+                "Engineer, Developer, ",
                 "Innovator.",
                 "Designer."
             ]}
