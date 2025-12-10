@@ -50,3 +50,14 @@
     margin:0;
     color: #94a3b8;
 }
+.picture {
+    border-radius: 50%;
+    background: #5483af;
+    width: 4vw;
+    height: 4vw;
+    justify-content: center;
+    align-items: center;
+    margin:8% 0 8% 8%;
+    display: flex;
+}
+

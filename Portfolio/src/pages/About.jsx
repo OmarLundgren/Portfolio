@@ -1,5 +1,5 @@
 import "../styles/About.css";
-
+import { Lightbulb, Layers, Code, Link } from 'lucide-react';
 export default function About() {
     return (
 
@@ -16,25 +16,24 @@ export default function About() {
             </p>
             <div className={"aboutCards"}>
                 <div className="card">
-                    <div><img src={"C:\Users\lundg\OneDrive\Bilder\designIcon.png"} alt={"Design Icon"}/> </div>
+                    <div className={"picture"}><Layers/> </div>
                     <h3>Design Thinking</h3>
-                    <p>User-centered design approach with focus on aesthetics and usability
-                    </p>
+                    <p>User-centered design approach with focus on aesthetics and usability</p>
                 </div>
                 <div className="card">
-                    <div><img src={"C:\Users\lundg\OneDrive\Bilder\designIcon.png"} alt={"Design Icon"}/> </div>
+                    <div className={"picture"}><Code/> </div>
                     <h3>Problem Solving</h3>
                     <p>Clean, scalable code with modern frameworks and best practices</p>
                 </div>
                 <div className="card">
-                    <div><img src={"C:\Users\lundg\OneDrive\Bilder\designIcon.png"} alt={"Design Icon"}/> </div>
+                    <div className={"picture"}><Lightbulb/> </div>
                     <h3>Innovation</h3>
-                    <p>User-centered design approach with focus on aesthetics and usability</p>
+                    <p>Exploring creative ideas to build modern, future-ready digital solutions</p>
                 </div>
                 <div className="card">
-                    <div><img src={"C:\Users\lundg\OneDrive\Bilder\designIcon.png"} alt={"Design Icon"}/> </div>
+                    <div className={"picture"}><Link/> </div>
                     <h3>Collaboration</h3>
-                    <p>Clean, scalable code with modern frameworks and best practices</p>
+                    <p>Enjoy working with others, sharing ideas, and building together</p>
                 </div>
             </div>
         </div>
