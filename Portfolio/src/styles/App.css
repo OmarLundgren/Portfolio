@@ -6,7 +6,9 @@
 
 }
 
-
+#projects {
+  height:100vw;
+}
 section {
   height: 41.17vw; /* each section fills the screen */
   padding-top: 3vw;

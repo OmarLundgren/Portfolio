@@ -1,0 +1,134 @@
+.projects {
+    display: grid;
+    grid-template-columns: 42vw 42vw;
+    grid-template-rows: 8vw auto auto;
+    gap: 3vw;
+    padding: 0 5vw;
+    height: 100%;
+    justify-items: center;
+}
+
+.title {
+    grid-column: span 2;
+    height:6vw;
+}
+
+.projectContainer {
+    width: 100%;
+    height:40vw;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background: transparent; /* ingen bakgrund */
+}
+
+
+.project-image {
+    width: 100%;
+    height: 21vw;
+    border-radius: 1vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -0.6vw -1.8vw 6vw rgba(47, 50, 61, 0.34);
+    background: linear-gradient(90deg, #1A1B25, #10121C);
+    transition: transform 0.4s ease;
+}
+.project-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+}
+
+.project-card {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    gap: 1vw;
+    border-radius: 0.8vw;
+    background: rgba(26, 27, 37, 0.0);
+    margin-top: 2vw;
+}
+
+.project-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    width: 100%;
+    gap: 0.5vw;
+}
+
+.project-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.875vw;
+    font-weight: 600;
+    color: #94a3b8;
+    justify-self: start;
+    margin:0;
+    padding-left:1vw ;
+}
+
+.project-year {
+    font-family: Roboto, sans-serif;
+    font-size: 0.9vw;
+    color: #d9d9d9;
+    text-transform: uppercase;
+    justify-self: end;
+    padding-right: 1vw;
+}
+
+.project-meta {
+    font-size: 0.9vw;
+    font-family: Roboto, sans-serif;
+    color: #d9d9d9;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    justify-self: left;
+    background: linear-gradient(90deg, #1A1B25,#10121C);
+    border-radius: 0.5vw;
+    padding: 0.4vw;
+}
+
+.project-description {
+    font-family: Montserrat, sans-serif;
+    font-size: 2.5vw;
+    color: #CBCBCB;
+    text-align: left;
+    align-self: center; /* centrera vertikalt i mittenraden */
+    height: fit-content;
+    margin: 0;
+    padding-left: 1vw;
+}
+
+.project-links {
+    display: flex;
+    justify-content: start; /* kan ändras till center eller end */
+    gap: 2vw;
+    align-self: end;
+    padding-left: 1vw;
+}
+
+.project-links a {
+    position: relative;
+    font-size: 1vw;
+    font-family: Roboto, sans-serif;
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.project-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.3vw;
+    width: 0;
+    height: 0.1vw;
+    background: #7dd3fc;
+    transition: width 0.3s ease;
+}
+
+.project-links a:hover::after {
+    width: 100%;
+}
