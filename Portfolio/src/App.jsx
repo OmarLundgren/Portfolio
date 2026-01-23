@@ -8,7 +8,7 @@ import Skills from "./pages/Skills.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 import {useScroll} from "framer-motion";
-import {useRef} from "react";
+import {useEffect, useRef} from "react";
 
 function App() {
     const projectsRef = useRef(null);
@@ -17,9 +17,28 @@ function App() {
         target: projectsRef,
         offset: ["start start", "end end"],
     });
+    const cursorRef = useRef(null);
+
+    useEffect(() => {
+        const cursor = cursorRef.current;
+        if (!cursor) return;
+
+        const moveCursor = (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        };
+
+        window.addEventListener("mousemove", moveCursor);
+
+        return () => {
+            window.removeEventListener("mousemove", moveCursor);
+        };
+    }, []);
 
     return (
         <>
+            <div ref={cursorRef} className="custom-cursor" />
+
             <FallingStar />
             <NavBar />
             <main className="main-content">

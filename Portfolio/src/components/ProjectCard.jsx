@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import "../styles/ProjectCard.css";
 
-export default function ProjectCard({title, description, tech, year, demo, github, image, fit ="cover"}) {
+export default function ProjectCard({title, description, tech, tech2, tech3, year, demo, github, image, fit ="cover"}) {
+
     return (
         <motion.div
             className="projectContainer"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0, zIndex:2}}
-            whileHover={{ scale: 1.05 }}
+
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.4, ease: "easeOut" }}
         >
@@ -19,6 +20,8 @@ export default function ProjectCard({title, description, tech, year, demo, githu
                 <div className="project-header">
                     <h2 className="project-title">{title}</h2>
                     <span className="project-meta">{tech}</span>
+                    {tech2 ? <span className="project-meta">{tech2}</span> : null}
+                    {tech3 ? <span className="project-meta">{tech3}</span> : null}
                     <span className="project-year">{year}</span>
                 </div>
                 <h1 className="project-description">{description}</h1>

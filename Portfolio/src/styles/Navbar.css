@@ -29,6 +29,8 @@ header {
 .nav-link {
     color: #d9d9d9;
     width:fit-content;
+    font-family: 'Roboto', sans-serif;
+
 
 }
 .item:nth-child(1) {
@@ -38,7 +40,8 @@ header {
 .item:nth-child(2) {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
 }
 .item:nth-child(3) {
     justify-self: right;

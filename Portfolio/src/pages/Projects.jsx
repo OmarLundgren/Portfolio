@@ -15,7 +15,9 @@ export default function Projects() {
 
                 title="Chess and Quest"
                 description="Chess Reinvented: Quests, Strategy, Rewards."
-                tech="Fullstack Development"
+                tech="C#"
+                tech2="SQL"
+                tech3="JS"
                 year="2025 - now"
                 demo="https://example.com"
                 github="https://github.com/morganlundgren/ChessAndQuests"

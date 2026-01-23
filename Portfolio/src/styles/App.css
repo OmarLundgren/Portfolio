@@ -50,3 +50,22 @@ section {
 .read-the-docs {
   color: #888;
 }
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2vw;   /* ca 25px på 1280px bredd */
+  height: 2vw;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.02); /* väldigt subtil */
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(5vw); /* massiv blur → mjukt glow */
+
+  box-shadow:
+          0 0 6vw 6vw rgba(255,255,255,0.02),
+          0 0 12vw 6vw rgba(255,255,255,0.02),
+          0 0 24vw 12vw rgba(255,255,255,0.02);
+
+}
