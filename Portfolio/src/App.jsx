@@ -6,6 +6,7 @@ import Stars from "./components/stars.jsx";
 import FallingStar from "./components/fallingStar.jsx";
 import Skills from "./pages/Skills.jsx";
 import Projects from "./pages/Projects.jsx";
+import Contact from "./pages/Contact.jsx";
 import {useScroll} from "framer-motion";
 import {useRef} from "react";
 
@@ -38,10 +39,10 @@ function App() {
                 <section id="projects" ref={projectsRef}>
                     <Stars offset={4} horizontalProgress={projectsProgress}/>
                     <Projects/>
-                    e
+
                 </section>
                 <section id="contact" >
-                    e
+                    <Contact/>
                 </section>
 
 

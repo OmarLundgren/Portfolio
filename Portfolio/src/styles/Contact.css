@@ -1,0 +1,58 @@
+#contact {
+    height: 25vw;
+    margin-top: 5vw;
+}
+.contactContainer {
+    display: grid;
+    grid-template-columns: .3fr 1fr 0.3fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "up upmiddle upright"
+                        "left middle right";
+    padding: 0 5vw;
+
+}
+.contactLeft{
+    grid-area: left;
+    justify-self: start;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.contactLeft h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.contactTitle {
+    color:#CBCBCB;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.contactLinks2{
+    grid-area: right;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height:100%;
+    justify-self:right;
+    align-items: center;
+    gap:3vw
+
+}
+.profilePicture {
+    border-radius: 50%;
+    height: 18vw;
+    border-bottom: 0.1vw solid #31323D;
+    width:18vw;
+    background: linear-gradient(90deg, #1A1B25,#10121C);
+    z-index: 3;
+
+}
+
+.contactTitleWrapper {
+    position: relative;
+    grid-area: middle; /* exakt samma plats som innan */
+    place-items: center;
+}
+
+

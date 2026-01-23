@@ -25,7 +25,7 @@
 }
 
 .degreeBar{
-    background-color: #14192A; /*background: linear-gradient(90deg, #1A1B25,#10121C) ;*/
+    background: linear-gradient(90deg, #1A1B25,#10121C) ;
     width: 100%;
     height: 0.7vw;
     border-radius: 2vw;

@@ -13,7 +13,7 @@
 }
 .degreeContainer {
     grid-area: c;
-    padding-left:7.5vw;
+    padding-left:5vw;
     width:40.7vw;
     display:grid;
     grid-template-rows:0.3fr 1fr;
@@ -40,7 +40,7 @@
     grid-template-rows:0.3fr 1fr;
 
     grid-template-areas: "a" "b";
-    padding-right:7.5vw;
+    padding-right:5vw;
     width:40.7vw;
     justify-self: end;
     height: auto;
