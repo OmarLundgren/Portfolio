@@ -72,7 +72,7 @@
 .project-year {
     font-family: Roboto, sans-serif;
     font-size: 0.9vw;
-    color: #d9d9d9;
+    color:#CBCBCB;
     text-transform: uppercase;
     justify-self: end;
     padding-right: 1vw;
@@ -82,7 +82,7 @@
 .project-meta {
     font-size: 0.9vw;
     font-family: Roboto, sans-serif;
-    color: #d9d9d9;
+    color:#CBCBCB;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     justify-self: left;

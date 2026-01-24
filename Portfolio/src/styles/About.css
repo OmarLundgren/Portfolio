@@ -35,22 +35,23 @@
     box-shadow: -0.703vw -1.172vw 3.688vw rgba(47, 50, 61, 0.34);
     padding:0;
     justify-items: start; /* aligns children to the left in a grid */
-    align-items: end;
     grid-template-rows: 0.5fr 0.5fr 1fr;
     gap:0;
+    font-family: 'Roboto', sans-serif;
 }
 .card h3 {
     padding: 0 20% 8% 8%;
-    font-size:15px;
+    font-size:1.17vw;
     margin:0;
-    font-weight: normal;
+    font-weight: 400;
 }
 .card p{
-    font-size: 15px;
+    font-size: 1.05vw;
     text-align: left;
     padding: 0 20% 8% 8%;
     margin:0;
     color: #94a3b8;
+    font-family: 'Montserrat', sans-serif;
 }
 .picture {
     border-radius: 50%;

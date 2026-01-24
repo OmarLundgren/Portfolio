@@ -1,7 +1,7 @@
 .scrollIndicator {
 
     border-radius: 20vw;
-    border: 1px solid #b8b8b8;
+    border: 1px solid #cbcbcb;
     width: 2vw;
     height: 4vw;
     align-items: center;
@@ -13,7 +13,7 @@
 }
 .scrollLine {
     height: 30%;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #cbcbcb;
     width:1px;
     border-radius: 20vw;
     background: #d9d9d9;
