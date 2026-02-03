@@ -36,3 +36,27 @@
     border-radius: 2vw;
 }
 
+
+@media (max-width: 900px) {
+    .degree {
+        height: auto;
+        gap: 2vw;
+    }
+    .degreeInfo {
+        font-size: 3.5vw;
+        grid-template-columns: 1fr auto;
+    }
+    .degreeBar {
+        height: 2.5vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .degreeInfo {
+        font-size: 3vw;
+    }
+    .degreeInfo p,
+    .degreeNumber {
+        font-size: 3vw;
+    }
+}

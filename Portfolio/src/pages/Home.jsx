@@ -5,7 +5,8 @@ function Home() {
     return (
         <div className="Home">
 
-            <div>
+            <div className="hero">
+                <h1 className="heroHeader">Omar Lundgren</h1>
                 <TypingText
                     phrases={[
                         "Engineer, Developer, ",

@@ -55,3 +55,9 @@ body {
         transform: translate(17vw, 17vw) rotate(135deg); /* slutposition */
     }
 }
+
+@media (max-width: 900px) {
+    body {
+        overflow: auto;
+    }
+}

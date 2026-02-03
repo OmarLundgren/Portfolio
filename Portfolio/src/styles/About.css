@@ -64,3 +64,70 @@
     display: flex;
 }
 
+
+@media (max-width: 900px) {
+    .about {
+        grid-template-rows: auto auto auto;
+        gap: 6vw;
+        padding: 0 6vw;
+    }
+    .aboutText {
+        width: 100%;
+        font-size: 4vw;
+    }
+    .aboutCards {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 4vw;
+    }
+    .card {
+        width: 80%;
+        height: auto;
+        border-radius: 3vw;
+        padding-bottom: 4vw;
+    }
+    .card h3 {
+        font-size: 4vw;
+        padding: 0 8% 4% 8%;
+    }
+    .card p {
+        font-size: 3.3vw;
+        padding: 0 8% 6% 8%;
+    }
+    .picture {
+        width: 10vw;
+        height: 10vw;
+        margin: 8% 0 6% 8%;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutCards {
+        grid-template-columns: 1fr;
+    }
+    .aboutText {
+        font-size: 4.5vw;
+    }
+    .card h3 {
+        font-size: 4.5vw;
+    }
+    .card p {
+        font-size: 3.8vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .aboutCards {
+        width: 90%;
+    }
+    .card {
+        max-width: 38vw;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+}

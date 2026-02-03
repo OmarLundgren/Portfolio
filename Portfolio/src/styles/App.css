@@ -9,8 +9,7 @@
   height:100vw;
 }
 section {
-  height: 41.17vw; /* each section fills the screen */
-  padding-top: 3vw;
+  height: 100vh; /* each section fills the screen */
 }
 #home {
   padding: 0;
@@ -68,4 +67,24 @@ section {
           0 0 12vw 6vw rgba(255,255,255,0.02),
           0 0 24vw 12vw rgba(255,255,255,0.02);
 
+}
+
+@media (max-width: 900px) {
+  section {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 72px;
+  }
+  #projects {
+    height: auto;
+  }
+  .custom-cursor {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 64px;
+  }
 }

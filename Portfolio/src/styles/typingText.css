@@ -16,3 +16,11 @@
     0%, 50% { opacity: 1; }
     50.01%, 100% { opacity: 0; }
 }
+@media (max-width: 900px) {
+    .typing-text {
+        font-size: 8vw;
+    }
+    .cursor {
+        margin-left: 1vw;
+    }
+}

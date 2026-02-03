@@ -70,3 +70,48 @@
     z-index: 2;
     box-shadow: -0.1vw -0.3vw 1vw rgba(47, 50, 61, 0.34);
 }
+@media (max-width: 900px) {
+    .skills {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "a" "c" "d";
+        gap: 6vw;
+    }
+    .skillsHeader {
+        grid-column: span 1;
+        font-size: 7vw;
+    }
+    .degreeContainer {
+        padding-left: 0;
+        width: 90vw;
+        justify-self: center;
+    }
+    .degreeContainer h2 {
+        font-size: 5vw;
+    }
+    .technicalContainer {
+        padding-right: 0;
+        width: 90vw;
+        justify-self: center;
+    }
+    .technicalContainer h2 {
+        font-size: 5vw;
+    }
+    .technical {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3vw;
+        grid-auto-rows: auto;
+    }
+    .technicalCard {
+        height: auto;
+        font-size: 3.5vw;
+        padding: 2.5vw 3vw;
+        border-radius: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .technical {
+        grid-template-columns: 1fr;
+    }
+}

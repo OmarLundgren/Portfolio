@@ -15,7 +15,7 @@
 
 a {
   position: relative;
-  font-family: Roboto, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color:#CBCBCB;
   text-decoration: none;
 }
@@ -53,26 +53,21 @@ h1 {
   color: #CBCBCB;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 html {
   scroll-behavior: smooth;
 }
 
 
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  a::after {
+    bottom: -0.6vw;
+    height: 0.3vw;
+  }
+}

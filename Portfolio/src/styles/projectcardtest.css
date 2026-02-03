@@ -133,3 +133,31 @@
     transform: scale(1.02);
     transition: transform 0.3s ease;
 }
+@media (max-width: 900px) {
+    .portfolio-card-container {
+        width: 90vw;
+        height: auto;
+        padding: 6vw;
+        border-radius: 6vw;
+        gap: 3vw;
+    }
+    .card-top-nav {
+        font-size: 3.5vw;
+    }
+    .card-title {
+        font-size: 6vw;
+    }
+    .card-year {
+        font-size: 3vw;
+    }
+    .card-sub-info {
+        font-size: 3vw;
+    }
+    .hamburger-menu span {
+        width: 6vw;
+        height: 0.6vw;
+    }
+    .footer-links a {
+        font-size: 3vw;
+    }
+}

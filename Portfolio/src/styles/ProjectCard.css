@@ -132,3 +132,70 @@
 .project-links a:hover::after {
     width: 100%;
 }
+
+@media (max-width: 900px) {
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10vw;
+        padding: 0 6vw;
+    }
+    .title {
+        grid-column: span 1;
+        height: auto;
+    }
+    .projectContainer {
+        height: auto;
+    }
+    .project-image {
+        height: 50vw;
+        border-radius: 3vw;
+    }
+    .project-image img {
+        border-radius: 3vw;
+    }
+    .project-card {
+        gap: 4vw;
+        margin-top: 4vw;
+    }
+    .project-header {
+        flex-wrap: wrap;
+        row-gap: 2vw;
+    }
+    .project-title {
+        font-size: 5vw;
+        padding-left: 0;
+    }
+    .project-meta {
+        font-size: 3vw;
+        padding: 1vw 2vw;
+        border-radius: 2vw;
+    }
+    .project-year {
+        font-size: 3vw;
+        padding-right: 0;
+    }
+    .project-description {
+        font-size: 5vw;
+        padding-left: 0;
+    }
+    .project-links {
+        gap: 6vw;
+        padding-left: 0;
+    }
+    .project-links a {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-image {
+        height: 60vw;
+    }
+    .project-title {
+        font-size: 6vw;
+    }
+    .project-description {
+        font-size: 6vw;
+    }
+}

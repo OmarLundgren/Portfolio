@@ -23,7 +23,7 @@ import '../styles/Navbar.css'
     }, []);
 
     return (
-        <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "1.2vw" }}>
             <span className="status-dot"></span>
             <span>UME {time}</span>
         </div>
